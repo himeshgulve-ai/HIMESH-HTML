@@ -1,0 +1,49 @@
+/* Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; line-height: 1.5; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; font-family: inherit; }
+
+/* Utilities */
+.container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.section { margin-top: 40px; }
+.section-title { font-size: 24px; margin-bottom: 20px; font-weight: 700; color: #111827; }
+.grid { display: grid; gap: 20px; }
+.card { background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); overflow: hidden; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+.p-4 { padding: 16px; }
+.text-gray { color: #6b7280; font-size: 14px; margin-top: 4px; }
+
+/* Navbar */
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 24px; font-weight: 700; color: #121212; }
+.logo span { color: #2563eb; }
+.search { flex: 1; max-width: 400px; margin: 0 20px; padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 15px; outline: none; }
+.search:focus { border-color: #2563eb; }
+.cart { background: #E23744; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
+
+/* Hero Modes */
+.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.mode-card { padding: 40px 20px; border-radius: 16px; color: white; text-align: center; }
+.mode-card h2 { font-size: 28px; margin-bottom: 16px; }
+.mode-card button { background: white; color: #111; padding: 10px 24px; border-radius: 20px; font-weight: 600; font-size: 16px; }
+.grocery { background: linear-gradient(135deg, #0b8a00, #4ade80); }
+.food { background: linear-gradient(135deg, #E23744, #f43f5e); }
+
+/* Categories Grid (Grocery) */
+.categories-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.cat-card { display: flex; align-items: center; justify-content: center; height: 100px; font-size: 16px; font-weight: 600; cursor: pointer; }
+
+/* Restaurants Grid (Food) */
+.restaurants-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.res-card img { height: 200px; width: 100%; object-fit: cover; }
+.res-card h4 { font-size: 18px; color: #111827; }
+
+/* Footer */
+footer { text-align: center; padding: 40px; margin-top: 40px; background: #111827; color: white; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modes { grid-template-columns: 1fr; }
+    .search { display: none; }
+}

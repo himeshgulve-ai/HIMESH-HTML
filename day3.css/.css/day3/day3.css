@@ -1,0 +1,57 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ h1 { 
+    color: red;
+    background-color: black;
+    font-size: 100px;
+   font-weight: 300;
+   font-style: italic;
+   text-align: center;
+   text-decoration: underline;
+    text-shadow: 30px 30px 30px purple;
+}
+p {
+    color: blue;
+    background-color: yellow;
+    font-size: 40x;
+    font-weight: 700;
+    font-style: normal;{
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+};
+    text-align: left;
+    text-decoration: overline;
+    text-shadow: 5px 5px 10px gray;
+    word-spacing: 10px;
+
+
+}
+.btn {
+    color: rgb(128, 0, 68);
+    background-color: pink;
+    font-size: 100px;
+    font-weight: 500;
+    font-style: oblique;
+    text-align: right;
+    text-decoration: underline;
+    text-shadow: 10px 10px 20px orange;
+    
+}
+.btn:hover {
+    color: white;
+    background-color: blue;
+    font-size: 100px;
+    font-weight: 500;
+    font-style: oblique;
+    text-align: right;
+    text-decoration: underline;
+    text-shadow: 10px 10px 20px orange;
+    scale: 0.5;
+}

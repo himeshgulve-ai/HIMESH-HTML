@@ -1,0 +1,58 @@
+ header{
+    background-color: rgb(212, 59, 59);
+    color: white;
+    padding: 20px;
+    position: relative;
+ }
+ .image cointainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+ }
+    nav{
+        background-color: rgb(212, 59, 59);
+        color: wheat;
+       
+        position: absolute;
+        top: 0;
+        
+    
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: black;
+    }
+    .image cointainer img{
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        padding: 20px;
+    }
+    .btn{
+        background-color: white;
+        color: rgb(212, 59, 59);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background-color: rgb(212, 59, 59);
+        color: white;
+        border: 1px solid white;
+    }
